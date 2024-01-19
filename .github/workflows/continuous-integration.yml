@@ -52,7 +52,7 @@ jobs:
       - name: Select aws-sdk-swift branch
         run: |
           ORIGINAL_REPO_HEAD_REF="$GITHUB_HEAD_REF" \
-          DEPENDENCY_REPO_URL="https://github.com/awslabs/aws-sdk-swift.git" \
+          DEPENDENCY_REPO_URL="https://github.com/AndrewFossAWS/aws-sdk-swift.git" \
           ./scripts/ci_steps/select_dependency_branch.sh
       - name: Checkout aws-sdk-swift
         uses: actions/checkout@v3
